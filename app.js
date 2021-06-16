@@ -5,18 +5,24 @@ alert("Welcome to the museum ..!" + name)
 
 var fav = prompt("what is your favourite art subject of these (modern, archi, abstract) " + name + "?")
 var answer = prompt(name + " who is your favourite artist ?")
+
 if (fav == "modern") {
+
   document.write("<div>" +
     "<img src='https://cdn-anmal.nitrocdn.com/vJgtiwkCsLhvhzZzqhfdngZGCtTVAAGD/assets/static/optimized/rev-25bc62b/wp-content/uploads/2020/03/modern-paintings-art-4-768x768.jpg'/>" +
     "<h4>" + "Modern Art" + "</h4>" +
     "</div>")
+
 }
+
 else if (fav == "archi") {
+
   document.write("<div>" +
     "<img src='https://onehundrededition.com/wp-content/uploads/2018/12/PARIS-in-100%C2%BA-The-10-Top-Contemporary-Art-Galleries-8.jpg'/>" +
     "<h4>" + "Architecture" + "</h4>" +
     "</div>")
 }
+
 else if (fav == "abstract") {
 
   document.write("<div>" +
