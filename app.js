@@ -21,6 +21,7 @@ else if (fav == "archi") {
     "<img src='https://onehundrededition.com/wp-content/uploads/2018/12/PARIS-in-100%C2%BA-The-10-Top-Contemporary-Art-Galleries-8.jpg'/>" +
     "<h4>" + "Architecture" + "</h4>" +
     "</div>"+ "</section>")
+
 }
 
 else if (fav == "abstract") {
