@@ -44,18 +44,17 @@ var answer = prompt(name + " who is your favourite artist ?")
 
 
 document.write("<p>" + "Welcome to Our museum " + name + " fan of artist " + answer + "</p>")
-
+document.write("<div>" + "Thanks for rating us" + "</div>") 
 var counterstars = prompt("how many stars would rate us ?" + name)
 while (counterstars > 5) {
   counterstars = prompt("how many stars would rate us ?" + name)
 }
-
 while (counterstars <= 5) {
 
-  document.write("<div>" + "Thanks for rating us" + "</div>")
-  for (var x = 0; x < counterstars; x++) {
+  for (var x = 0; x <= 5; x++) {
     document.write("&#11088; ")
   }
 
   counterstars++
 }
+
