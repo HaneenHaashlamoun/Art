@@ -1,0 +1,58 @@
+body{
+  background-color: mistyrose;
+  margin: 0;
+  align-content: center;
+}
+
+header{
+  background-color: darkcyan;
+  height: 150px;
+}
+
+h1{
+  float: inherit;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+h4{
+  float: inherit;
+  text-decoration-color: white;
+
+}
+nav{
+  float: inherit;
+}
+
+li a{
+ text-decoration: none;
+}
+
+li{
+  display: inline-block;
+  padding-left: 30px;
+}
+
+img{
+  width: 350px;
+  height: 350px;
+}
+
+div{
+  display: inline-block;
+  padding: 40px;
+  }
+
+p{
+  background-color: darkcyan ;
+  text-decoration-color: white;
+  margin: 50px;
+  padding: 30px;
+  text-align: center;
+}
+
+section{
+  display: block;
+  text-align: center;
+   
+}
+
