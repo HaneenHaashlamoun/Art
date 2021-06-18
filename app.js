@@ -1,16 +1,17 @@
-
+//name box prompt
 var name = prompt("what is your name ?")
-
+while (name.length < 1) {
+  var name = prompt("what is your name ?")
+}
 alert("Welcome to the museum ..!" + name)
 
+
+//favourite subject prompt
 var fav = prompt("what is your favourite art subject of these (modern, archi, abstract) " + name + "?")
 
 while (fav !== "modern" && fav !== "archi" && fav !== "abstract") {
   fav = prompt("what is your favourite art subject of these (modern, archi, abstract) " + name + "?")
 }
-
-
-
 if (fav == "modern") {
 
   document.write("<section>" + "<div>" +
@@ -19,7 +20,6 @@ if (fav == "modern") {
     "</div>" + "</section>")
 
 }
-
 else if (fav == "archi") {
 
   document.write("<section>" + "<div>" +
@@ -28,7 +28,6 @@ else if (fav == "archi") {
     "</div>" + "</section>")
 
 }
-
 else if (fav == "abstract") {
 
   document.write("<section>" + "<div>" +
@@ -40,22 +39,25 @@ else {
   alert("sorry we can't help you we do not have this subject")
 }
 
+//favourite artist prompt
 var answer = prompt(name + " who is your favourite artist ?")
+while (answer.length < 1) {
+  answer = prompt(name + " who is your favourite artist ?");
+}
 
-
+// welcome to museum prompt
 document.write("<p>" + "Welcome to Our museum " + name + " fan of artist " + answer + "</p>")
 
-var counterstars = prompt("how many stars would rate us ?" + name)
-while (counterstars > 5) {
-  counterstars = prompt("how many stars would rate us ?" + name)
+//rating prompt
+document.write("<div>" + "Thanks for rating us" + "</div>")
+
+var counterstars = prompt("how many stars would rate us 1 - 5 stars?")
+while (counterstars > 5 || counterstars.length == 0) {
+  counterstars == 0
+  counterstars = prompt("how many stars would rate us 1 - 5 stars?");
 }
 
-while (counterstars <= 5) {
-
-  document.write("<div>" + "Thanks for rating us" + "</div>")
-  for (var x = 0; x < counterstars; x++) {
-    document.write("&#11088; ")
-  }
-
-  counterstars++
+for (var x = 0 ; x < counterstars; x++) {
+  document.write("&#11088; ");
 }
+
